@@ -8,4 +8,9 @@ describe('<Display />', () => {
         display.getByText(/strikes/i);
         display.getByText(/balls/i);
     });
+});
+
+test("Display renders without crashing", () => {
+    const component = render(<Display />);
+    console.log(component);
 })
